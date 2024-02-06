@@ -1,6 +1,6 @@
 import { Role } from '../../types';
 import { User } from './user';
 
-export class Client extends User {
-  role: Role 
+export class Seller extends User {
+  role: Role;
 }

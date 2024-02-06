@@ -1,6 +1,7 @@
 import { PetType } from '../../types';
+import { BaseEntity } from './base.entity';
 
-export class Pet {
+export class Pet extends BaseEntity {
   name: string;
 
   weight: number;
