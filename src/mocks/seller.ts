@@ -1,22 +1,22 @@
-enum ROLE {
-  SELLER = 'SELLER'
-}
+import { Seller } from '../db/entities/seller';
+import { Role } from '../types/index';
 
-export const sellers = [
+
+export const sellers: Seller[] = [
   {
     id: 1,
-    firstname: 'Chris',
-    lastname: 'Gomm',
+    firstName: 'Chris',
+    lastName: 'Gomm',
     mail: 'chrimsdummy@gmail.com',
     password: 'test123',
-    role: ROLE.SELLER
+    role: Role.SELLER,
   },
   {
     id: 2,
-    firstname: 'Barbara',
-    lastname: 'Weinston',
+    firstName: 'Barbara',
+    lastName: 'Weinston',
     mail: 'jb@gmail.com',
     password: 'test234',
-    role: ROLE.SELLER
+    role: Role.SELLER,
   },
 ];

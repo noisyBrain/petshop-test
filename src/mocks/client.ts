@@ -1,28 +1,29 @@
+import { Client } from 'src/db/entities/client';
 import { pets } from './pet';
 
-export const clients = [
+export const clients: Client[] = [
   {
     id: 1,
-    firstname: 'John',
-    lastname: 'Doe',
+    firstName: 'John',
+    lastName: 'Doe',
     mail: 'johndoe@gmail.com',
     password: 'test123',
-    pets: [pets[0].id],
+    pets: [pets[0]],
   },
   {
     id: 2,
-    firstname: 'Jean',
-    lastname: 'Barrel',
+    firstName: 'Jean',
+    lastName: 'Barrel',
     mail: 'jb@gmail.com',
     password: 'test234',
-    pets: [pets[1].id, pets[2].id],
+    pets: [pets[1], pets[2]],
   },
   {
     id: 3,
-    firstname: 'Bobby',
-    lastname: 'James',
+    firstName: 'Bobby',
+    lastName: 'James',
     mail: 'bobbyj@gmail.com',
     password: 'test345',
-    pets: [pets[3].id, pets[4].id]
+    pets: [pets[3], pets[4]]
   },
 ];
