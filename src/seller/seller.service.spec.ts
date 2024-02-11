@@ -37,7 +37,8 @@ describe('SellerService', () => {
     service.createSeller(newSeller);
 
     /*
-      testing the new seller is added to the end of the array
+      as this app has no persistance layer I'm testing
+      that the new seller is added to the end of the array
     */
     expect(sellers[sellers.length - 1]).toStrictEqual<Seller>({
       id: 4,
