@@ -26,7 +26,6 @@ describe('SellerService', () => {
   it('should add the new seller to the array of sellers', () => {
     const sellers = service.sellers;
     const newSeller = {
-      id: 4,
       firstName: 'Foo',
       lastName: 'Test',
       mail: 'footest@gmail.com',

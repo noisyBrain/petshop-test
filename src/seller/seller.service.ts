@@ -12,6 +12,9 @@ export class SellerService {
   }
 
   createSeller(seller: Seller): void {
+    const lastSellerId = this.sellers[this.sellers.length - 1].id + 1;
+    seller.id = lastSellerId + 1;
+
     this.sellers.push(seller);
   }
 
